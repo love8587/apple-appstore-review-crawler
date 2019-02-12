@@ -1,0 +1,22 @@
+env:
+  debug: '*'
+  SLACK_HOST: "https://slack.com/api/chat.postMessage"
+  SLACK_TOKEN: ""
+  SLACK_CHANNEL: ""
+  SLACK_BOT_TOKEN: ""
+db:
+  master:
+    client: mysql
+    connection:
+      host: localhost
+      port: 3306
+      user: summer
+      password: "password"
+      database: main
+      dateStrings: TIMESTAMP
+      charset: utf8mb4_bin
+    pool:
+      min: 0
+      max: 1
+    acquireConnectionTimeout: 60000
+
